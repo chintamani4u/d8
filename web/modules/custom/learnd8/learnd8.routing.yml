@@ -1,0 +1,24 @@
+
+learnd8.tbl_controller_hello:
+  path: '/learnd8/tbl'
+  defaults:
+    _controller: '\Drupal\learnd8\Controller\TblController::generateTbl'
+    _title: 'HTMLTABLE'
+  requirements:
+    _permission: 'access content'
+
+learnd8.list_controller_generateList:
+  path: '/learnd8/list'
+  defaults:
+    _controller: '\Drupal\learnd8\Controller\ListController::generateList'
+    _title: 'List'
+  requirements:
+    _permission: 'access content'
+
+learnd8.link_controller_generateLinks:
+  path: '/learnd8/links'
+  defaults:
+    _controller: '\Drupal\learnd8\Controller\LinkController::generateLinks'
+    _title: 'Links'
+  requirements:
+    _permission: 'access content'
