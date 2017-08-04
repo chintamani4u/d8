@@ -1,0 +1,27 @@
+uuid: 0b9d61fe-deb7-4650-88f7-64db9f418c64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_counter
+    - node.type.press_release
+_core:
+  default_config_hash: 6Ihu-1b6CZZ5lMalj6jRkRKXZXDp3wgrDVtU5aELWyY
+id: node.press_release.field_counter
+field_name: field_counter
+entity_type: node
+bundle: press_release
+label: Counter
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

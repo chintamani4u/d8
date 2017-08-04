@@ -1,0 +1,32 @@
+uuid: e83f5766-a336-4025-a472-ea72b8ab4752
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.press_release.body
+    - field.field.node.press_release.field_counter
+    - node.type.press_release
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 5w59TSDZbtm40InNVPol8B1XRfVdtLTdzxjJ2A_qT9E
+id: node.press_release.teaser
+targetEntityType: node
+bundle: press_release
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_counter: true

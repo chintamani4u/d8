@@ -1,0 +1,22 @@
+uuid: 6427891f-fcb4-4bcc-b30a-1e28cda12414
+langcode: en
+status: true
+dependencies:
+  module:
+    - mc
+  theme:
+    - bartik
+_core:
+  default_config_hash: ub-5Q40-c9kCTqfyeJ-vnPe2q8jq2gWiHo8pr9gubS0
+id: linksblock
+theme: bartik
+region: sidebar_first
+weight: null
+provider: null
+plugin: links_block
+settings:
+  id: links_block
+  label: 'Links block'
+  provider: mc
+  label_display: visible
+visibility: {  }
