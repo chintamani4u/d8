@@ -22,7 +22,7 @@ class LinkController extends ControllerBase {
 
     $content[] = [
     '#type' => 'markup',
-    '#markup' => '<h3>Links Test</h3>'
+    '#markup' => '<h3>Simple Link fromUri</h3>'
     ];
 
     //Create url
@@ -32,6 +32,20 @@ class LinkController extends ControllerBase {
     $content[] = [
         '#type' =>'markup',
         '#markup' => $link->toString()
+    ];
+
+    $content[] = [
+        '#type' => 'markup',
+        '#markup' => '<h3>Link fromroute</h3>'
+    ];
+
+    $url = Url::fromRoute('<front>');
+    $text = $this->t('Home');
+    $link = Link::fromTextAndUrl($text,$url);
+
+    $content[] = [
+        '#type' => 'markup',
+        '#markup' => $link,
     ];
       return $content;
   }
