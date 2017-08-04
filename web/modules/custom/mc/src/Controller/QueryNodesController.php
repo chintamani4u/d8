@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file
+ * @file a good module
  * Contains \Drupal\mc\Controller\QueryNodesController.
  */
 
