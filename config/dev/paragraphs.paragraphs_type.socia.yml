@@ -1,0 +1,7 @@
+uuid: 68da2913-ccfd-466e-bd33-259d765df70f
+langcode: en
+status: true
+dependencies: {  }
+id: socia
+label: 'Social Media'
+behavior_plugins: {  }

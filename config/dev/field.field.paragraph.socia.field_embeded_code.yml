@@ -1,0 +1,21 @@
+uuid: 4e8538c6-0eab-403e-ad3f-6f40aa2dc038
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_embeded_code
+    - paragraphs.paragraphs_type.socia
+  module:
+    - text
+id: paragraph.socia.field_embeded_code
+field_name: field_embeded_code
+entity_type: paragraph
+bundle: socia
+label: 'Embeded code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

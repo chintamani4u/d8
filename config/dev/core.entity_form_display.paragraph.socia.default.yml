@@ -1,0 +1,36 @@
+uuid: c534059c-8331-4fbd-a97c-9c597e962419
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.socia.field_embeded_code
+    - field.field.paragraph.socia.field_link
+    - paragraphs.paragraphs_type.socia
+  module:
+    - link
+    - text
+id: paragraph.socia.default
+targetEntityType: paragraph
+bundle: socia
+mode: default
+content:
+  field_embeded_code:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
